@@ -132,13 +132,48 @@
     </div>
   </section>
 
-  <main>
-   
-  </main>
+  <section class="search">
+    <div class="container">
+      <div class="search__inner">
+        <div class="search__tabs tabs"><!-- tabs-section__btn-box -->
+          <button type="button" class="tabs__btn  ">Поиск по  номеру</button><!-- tabs-section__btn -->
+          <button type="button" class="tabs__btn ">Поиск по марке</button>
+          <button type="button" class="tabs__btn ">Поиск по названию товара</button>
+        </div>
+    
+        <div data-content='1' class="search__content-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите номер" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+    
+        <div data-content='2' class="search__content-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите марку" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+    
+        <div data-content='3' class="search__content-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите название товара" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+    
+
+
+  </section>
 
 
   <script src="./cscc/slider-section/slider/js/swiper.min.js"></script><!-- библиотека -->
   <script src="./cscc/slider-section/slider/js/slider.js"></script><!-- инициализация свайпера -->
+
+  <script src="cscc/search-section/script.js"></script><!-- контент в табах -->
 </body>
 
 </html>

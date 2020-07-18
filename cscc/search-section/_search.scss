@@ -1,0 +1,83 @@
+/* плавное появление элементов */
+/* @keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+} */
+.search {
+  background-color: white;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tabs {
+    height: 50px;
+    margin-bottom: 25px;
+  }
+
+  &__content-box {
+    display: block;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+
+  &__form {
+    display: flex;
+    margin-bottom: 5px;
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px 25px;
+    line-height: 25px;
+    border: none;
+    background-color: $color-base;
+    cursor: pointer;
+    border-radius: 3px;
+    cursor: text;
+
+    &::placeholder {
+      font-family: "SFProDisplay-Regular";
+      font-size: 16px;
+      line-height: 19px;
+      color: #656464;
+    }
+  }
+
+  &__btn {
+    padding: 15px 40px;
+    font-family: "SFProDisplay-Regular";
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    background-color: $color-accent;
+    cursor: pointer;
+  }
+}
+
+/* это отдельный блок, и его стоило бы распологать отдельно, но он не является полностью самодостаточным, поскольку нигде больше не используется самостоятельно */
+.tabs {
+  &__btn {
+    padding: 10px 25px;
+    text-align: center;
+    line-height: 25px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__btn--active {
+    background-color: $color-base;
+    color: black;
+    /* font-family: "SFProDisplay-Bold"; */
+    border-radius: 5px;
+  }
+}
