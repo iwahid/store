@@ -581,7 +581,6 @@ a:hover {
 @font-face {
   font-family: "SFProDisplay-Regular";
   src: url("./../../fonts/SFProDisplay-Regular.woff2") format("woff2");
-  src: url("./../../fonts/SFProDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -590,7 +589,6 @@ a:hover {
 @font-face {
   font-family: "SFProDisplay-Medium";
   src: url("./../../fonts/SFProDisplay-Medium.woff2") format("woff2");
-  src: url("./../../fonts/SFProDisplay-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -599,7 +597,6 @@ a:hover {
 @font-face {
   font-family: "SFProDisplay-Semibold";
   src: url("./../../fonts/SFProDisplay-Semibold.woff2") format("woff2");
-  src: url("./../../fonts/SFProDisplay-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -608,7 +605,23 @@ a:hover {
 @font-face {
   font-family: "SFProDisplay-Bold";
   src: url("./../../fonts/SFProDisplay-Bold.woff2") format("woff2");
-  src: url("./../../fonts/SFProDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* barlow */
+@font-face {
+  font-family: "Barlow-Regular";
+  src: url("./../../fonts/Barlow-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Barlow-Bold";
+  src: url("./../../fonts/Barlow-Bold.ttf");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -734,4 +747,104 @@ a:hover {
   height: 20px;
   border-radius: 50%;
   background-color: #1C62CD;
+}
+
+/* slider-section */
+.slider-section {
+  margin-bottom: 70px;
+}
+
+.promo-deal {
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+  height: 397px;
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+}
+
+.promo-deal__header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.promo-deal__action {
+  width: fit-content;
+  max-width: 110px;
+  height: fit-content;
+  padding: 0 20px;
+  background-color: #1C62CD;
+  color: white;
+  border-top-left-radius: 3px;
+  font-family: "SFProDisplay-Medium";
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.promo-deal__prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5px;
+}
+
+.promo-deal__price-new {
+  margin-bottom: 10px;
+  font-family: "Barlow-Bold";
+  font-size: 27px;
+  line-height: 32px;
+  color: #1C62CD;
+}
+
+.promo-deal__price-old {
+  font-family: "Barlow-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.promo-deal__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+
+.promo-deal__name {
+  text-align: center;
+  font-family: "SFProDisplay-Bold";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.promo-deal__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  background-color: #F0F0F4;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.promo-deal__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "SFProDisplay-Medium";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.promo-deal__time {
+  text-align: center;
+  font-family: "SFProDisplay-Bold";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #1C62CD;
 }
