@@ -1,0 +1,26 @@
+/* начальные стили проекта */
+
+@import "configuration-files/normalize";
+@import "configuration-files/slick";
+@import "configuration-files/style";
+
+/* самые базовые стили проекта */
+@import "variables/variables";
+@import "base/base";
+
+
+
+
+/* общие блоки */
+@import "common-parts/user-list/user-list";
+@import "common-parts/logo/logo";
+
+/* шрифты */
+@import "../fonts/fonts";
+
+/* header */
+@import "header/header";
+@import "header/header-menu";
+@import "header/header-categories"; 
+@import "header/header-list-icons"; 
+

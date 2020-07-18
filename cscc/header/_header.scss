@@ -1,0 +1,56 @@
+.header {
+  margin-bottom: 70px;
+
+  &__top {
+
+  }
+
+  &__top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 122px;
+    font-family: "SFProDisplay-Bold", sans-serif;
+  }
+  &__menu{
+    width: 40%;
+  }
+
+  &__logo {
+  }
+
+  &__right-section {
+    display: flex;
+    width: 40%;
+    align-items: center;
+    margin-right: 20px;
+  }
+
+  &__adress {
+    position: relative;
+    margin-right: auto;
+    padding-left: 35px;
+    &::before{ 
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 30px;
+      background-image: url("../../cscc/header/img/location.svg");
+      background-position: center;
+      background-size: cover;
+
+    }
+  }
+
+  &__user-list {
+  }
+
+  &__bottom {
+  }
+
+  &__bottom-inner {
+  }
+  
+}

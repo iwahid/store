@@ -1,0 +1,30 @@
+/* базовые цвета текста */
+$text-color-base: #2F3035;
+$text-color-light: #C4C4C4;
+
+/* базовые цвета макета */
+$color-base: #F0F0F4;
+$color-accent: #1C62CD;
+
+
+
+
+
+$disabled: #adadad;
+$icon-fill: #b5b5b5;
+
+/* для всех ссылок */
+$icon-fill-animation: 0.2s fill ease-in;/* анимация перекрашивания иконок */
+$text-color-animation: 0.2s color ease-in;/* анимация перекрашивания текста */
+
+/* для sidebar menu */
+$text-animation: 0.2s ease-in; /* анимация для пунктов side-bar menu. Реализовано отдельно, поскольку не является ссылками */
+$fill-animation: 0.2s fill ease-in; /* тоже анимация, для svg иконок пунктов sidebar menu */
+$border-animation: 0.2s border ease-in; /* рамки у элементов sidebar menu */
+
+/* для внутренних элементво сайта (кнопок) */
+$icon-animation: 0.2s all ease-in; /* анимация для svg элементов, являющихся кнопками или другими эл. управления */
+
+/* общий стиль теней для всех объектов на сайте */
+$shadow-animation: 0.2s box-shadow ease-in; 
+ 

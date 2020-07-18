@@ -1,0 +1,45 @@
+.header-categories {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-base;
+  font-family: "SFProDisplay-Regular";
+  min-height: 55px;
+
+  &__item {
+    margin: 0 10px;
+    line-height: 55px;
+    display: block;
+    height: 55px;
+  }
+
+  /* всю анимацию ссылок при наведении на них, можно вынести в отдельный класс-стилизатор. Но здесь это встречается пока только в меню */
+  &__link {
+    position: relative;
+    display: block;
+    height: 100%;
+   
+    &:hover {
+      color: black;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0;
+      bottom: 0;
+      background-color: $color-accent;
+      right: 0;
+      left: auto;
+      transition: all .3s;
+    }
+
+    &:hover::before {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: auto;
+    }
+  }
+}
