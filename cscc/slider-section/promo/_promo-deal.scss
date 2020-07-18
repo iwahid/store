@@ -1,8 +1,9 @@
 .promo-deal {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 265px;
-  height: 397px;
+  /* height: 397px; */
   border: 1px solid $text-color-light;
   border-radius: 4px;
 
@@ -92,6 +93,7 @@
     margin: 0 10px 10px 10px;
   }
   &__img {
+    object-fit: contain;
   }
   &__name {
     text-align: center;
