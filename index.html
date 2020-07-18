@@ -85,19 +85,30 @@
   <section class="slider-section">
     <div class="container">
       <div class="slider-section__inner">
-        <div class="slider-section__slider slider">
-          <a class="slider__item" href="#">
-            <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
-          </a>
-          <a class="slider__item" href="#">
-            <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
-          </a>
-          <a class="slider__item" href="#">
-            <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
-          </a>
+
+
+        <div class="slider-section__slider swiper">
+          <div class="swiper-container">
+            <!-- наименование не обязательно -->
+            <div class="swiper-wrapper">
+              <a href="#" class="swiper-slide card">
+                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+              </a>
+              <a href="#" class="swiper-slide card">
+                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+              </a>
+              <a href="#" class="swiper-slide card">
+                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+              </a>
+      
+            </div>
+            <button class="swiper-button-next"></button>
+            <button class="swiper-button-prev"></button>
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
 
-        <a class="slider-section__promo promo-deal">
+        <a class="slider-section__promo promo-deal" href="#">
           <div class="promo-deal__header">
             <p class="promo-deal__action">акция</p>
             <div class="promo-deal__prices">
@@ -121,11 +132,13 @@
     </div>
   </section>
 
+  <main>
+   
+  </main>
 
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script src="./cscc/slider-section/slider/js/swiper.min.js"></script><!-- библиотека -->
+  <script src="./cscc/slider-section/slider/js/slider.js"></script><!-- инициализация свайпера -->
 </body>
 
 </html>

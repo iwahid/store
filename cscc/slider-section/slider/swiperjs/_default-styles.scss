@@ -1,0 +1,119 @@
+.swiper-container {
+  max-width: 100%;
+  
+}
+
+.card {
+  /* слайд */
+  min-height: 330px;
+  color: #111;
+  font-size: 16px;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 5vw;
+  max-width: 30px;
+  height: 5vw;
+  max-height: 30px;
+  /* border-radius: 100%; */
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  /*  opacity: 0.1; */
+  background-size: 20px 20px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);/* синяя обводка на тачскринах */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-left.svg");
+  margin-left: 10px;
+}
+
+.swiper-button-next {
+  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-right.svg");
+  margin-right: 10px;
+}
+
+.slider-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.slider-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-pagination {
+  margin-bottom: 40px;
+  &-bullet {
+    width: 68px;
+    height: 2px;
+    border-radius: 0;
+    padding: 2px 10px;
+    background-color: #fff;
+    opacity: 0.3;
+    &-active {
+      opacity: 1;
+      background: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .swiper-button-prev {
+    margin-left: 20px;
+  }
+
+  .swiper-button-next {
+    margin-right: 20px;
+  }
+
+  .swiper-slide {
+    &__title {
+      line-height: 50px;
+    }
+    &__subtitle {
+      font-size: 0.9em;
+      margin-bottom: 50px;
+    }
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .swiper-button-prev {
+    margin-left: 20px;
+  }
+
+  .swiper-button-next {
+    margin-right: 20px;
+  }
+
+  .swiper-slide {
+    &__title {
+      font-size: 2em;
+    }
+    &__subtitle {
+      font-size: 0.9em;
+      margin-bottom: 50px;
+    }
+  }
+  .swiper-pagination {
+    margin-bottom: 20px;
+  }
+}
