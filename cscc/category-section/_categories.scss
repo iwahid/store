@@ -1,0 +1,71 @@
+.categories {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+    width: 370px;
+    margin: 10px;
+    padding: 15px 15px;
+    border: 1px solid #cdcdcd;
+    border-radius: 3px;
+    transition: box-shadow .3s ease-in-out;
+
+    &:hover {
+      border: 1px solid #fff;
+      box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+      border-radius: 3px;
+      .categories__info-title {
+        color: $color-accent;
+      }
+      
+    }
+
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__info-title {
+    font-family: "SFProDisplay-Bold";
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  &__info-more {
+    position: relative;
+    font-family: "SFProDisplay-Regular";
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-light;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 6px;
+      height: 9px;
+      top: 5px;
+      left: 80px;
+      background-image: url("../../../store/cscc/category-section/more.png");
+    }
+  }
+
+  &__img {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+
+}

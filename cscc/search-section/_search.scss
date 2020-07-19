@@ -5,6 +5,7 @@
 } */
 .search {
   background-color: white;
+  margin-bottom: 80px;
 
   &__inner {
     display: flex;
@@ -72,6 +73,32 @@
     border: none;
     background-color: transparent;
     cursor: pointer;
+
+    position: relative;
+    height: 100%;
+   
+    &:hover {
+      color: black;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0;
+      bottom: 0;
+      background-color: $color-accent;
+      right: 0;
+      left: auto;
+      transition: all .3s;
+    }
+
+    &:hover::before {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: auto;
+    }
   }
 
   &__btn--active {
