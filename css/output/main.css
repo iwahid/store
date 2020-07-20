@@ -1653,16 +1653,6 @@ button.swiper-pagination-bullet {
   flex-direction: column;
 }
 
-.search__tabs {
-  height: 50px;
-  margin-bottom: 25px;
-}
-
-.search__content-box {
-  display: block;
-  animation: fadeEffect 1s;
-}
-
 .search__form {
   display: flex;
   margin-bottom: 5px;
@@ -1704,6 +1694,15 @@ button.swiper-pagination-bullet {
 }
 
 /* это отдельный блок, и его стоило бы распологать отдельно, но он не является полностью самодостаточным, поскольку нигде больше не используется самостоятельно */
+.tabs {
+  /* не стилизация самого контента, а его обёртка. Разделяю контейнер блока под контент (это) и сам контент (поиск/предложения/реклама) других блоков*/
+}
+
+.tabs__btn-box {
+  height: 50px;
+  margin-bottom: 25px;
+}
+
 .tabs__btn {
   padding: 10px 25px;
   text-align: center;
@@ -1743,6 +1742,11 @@ button.swiper-pagination-bullet {
   color: black;
   /* font-family: "SFProDisplay-Bold"; */
   border-radius: 5px;
+}
+
+.tabs__contents-box {
+  display: block;
+  animation: fadeEffect 1s;
 }
 
 /* categories */

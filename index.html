@@ -134,28 +134,28 @@
 
   <section class="search">
     <div class="container">
-      <div class="search__inner">
-        <div class="search__tabs tabs"><!-- tabs-section__btn-box -->
-          <button type="button" class="tabs__btn  ">Поиск по  номеру</button><!-- tabs-section__btn -->
-          <button type="button" class="tabs__btn ">Поиск по марке</button>
-          <button type="button" class="tabs__btn ">Поиск по названию товара</button>
+      <div class="search__inner tabs">
+        <div class="search__tabs tabs__btn-box"><!-- tabs-section__btn-box -->
+          <button data-section="search" data-btn="1" type="button" class="tabs__btn ">Поиск по  номеру</button>
+          <button data-section="search" data-btn="2" type="button" class="tabs__btn ">Поиск по марке</button>
+          <button data-section="search" data-btn="3" type="button" class="tabs__btn ">Поиск по названию товара</button>
         </div>
     
-        <div data-content='1' class="search__content-box">
+        <div data-section="search" data-content='1' class="tabs__contents-box"> <!-- search__content-box -->
           <form class="search__form">
             <input type="text" placeholder="Введите номер" class="search__input">
             <button type="submit" class="search__btn">искать</button>
           </form>
         </div>
     
-        <div data-content='2' class="search__content-box">
+        <div data-section="search" data-content='2' class="tabs__contents-box">
           <form class="search__form">
             <input type="text" placeholder="Введите марку" class="search__input">
             <button type="submit" class="search__btn">искать</button>
           </form>
         </div>
     
-        <div data-content='3' class="search__content-box">
+        <div data-section="search" data-content='3' class="tabs__contents-box">
           <form class="search__form">
             <input type="text" placeholder="Введите название товара" class="search__input">
             <button type="submit" class="search__btn">искать</button>
@@ -164,10 +164,45 @@
       </div>
      
     </div>
-    
-
 
   </section>
+
+  <section class="search">
+    <div class="container">
+      <div class="search__inner tabs">
+        <div class="search__tabs tabs__btn-box"><!-- tabs-section__btn-box -->
+          <button data-section="search2" data-btn="1" type="button" class="tabs__btn ">Поиск по  номеру</button>
+          <button data-section="search2" data-btn="2" type="button" class="tabs__btn ">Поиск по марке</button>
+          <button data-section="search2" data-btn="3" type="button" class="tabs__btn ">Поиск по названию товара</button>
+        </div>
+    
+        <div data-section="search2" data-content='1' class="tabs__contents-box"> <!-- search__content-box -->
+          <form class="search__form">
+            <input type="text" placeholder="Введите номер" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+    
+        <div data-section="search2" data-content='2' class="tabs__contents-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите марку" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+    
+        <div data-section="search2" data-content='3' class="tabs__contents-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите название товара" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+
+  </section>
+
+
 
   <section class="categories">
     <div class="container">
@@ -231,6 +266,11 @@
     </div>
     
   </section>
+
+  
+
+
+
 
   <script src="./cscc/slider-section/slider/js/swiper.min.js"></script><!-- библиотека -->
   <script src="./cscc/slider-section/slider/js/slider.js"></script><!-- инициализация свайпера -->
