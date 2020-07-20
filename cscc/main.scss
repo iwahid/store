@@ -24,15 +24,33 @@
 @import "header/header-categories"; 
 @import "header/header-list-icons"; 
 
+
+/* подключил общий свайпер с дефолтными стилями */
+@import "common-parts/sliderjs/swiperjs/swiper";
+@import "common-parts/sliderjs/swiperjs/custom-styles";
+
+
 /* slider-section */
-@import "slider-section/slider/slider"; 
+/* Кастомизация свайперов - через описание в фалах _slider.scss в соответствующих блоку папках */
+/* баннер */
 @import "slider-section/promo/promo-deal"; 
-/* slider */
-@import "slider-section/slider/swiperjs/swiper";
-@import "slider-section/slider/swiperjs/_default-styles";
+
+/* кастом стиль для первого слайдера */
+@import "slider-section/slider/slider"; 
+
+/* кастом стиль для второго слайдера */
+@import "popular-section/slider/slider"; 
+
+
+
+
+
 
 /* search */
 @import "search-section/search";
+
+/* tabs */
+@import "common-parts/tabs/tabs";
 
 /* categories */
 @import "category-section/categories";

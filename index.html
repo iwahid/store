@@ -92,13 +92,13 @@
             <!-- наименование не обязательно -->
             <div class="swiper-wrapper">
               <a href="#" class="swiper-slide card">
-                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+                <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
               </a>
               <a href="#" class="swiper-slide card">
-                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+                <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
               </a>
               <a href="#" class="swiper-slide card">
-                <img src="cscc/slider-section/slider/img/slider-item.jpg" alt="slide">
+                <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
               </a>
       
             </div>
@@ -267,14 +267,65 @@
     
   </section>
 
-  
+  <section class="popular">
+    <div class="container">
+      <div class="popular__inner tabs">
+        <div class="popular__tabs tabs__btn-box"><!-- tabs-section__btn-box -->
+          <button data-section="popular" data-btn="1" type="button" class="tabs__btn ">запчасти</button>
+          <button data-section="popular" data-btn="2" type="button" class="tabs__btn ">моторы</button>
+          <button data-section="popular" data-btn="3" type="button" class="tabs__btn ">шины</button>
+          <button data-section="popular" data-btn="4" type="button" class="tabs__btn ">электроника</button>
+          <button data-section="popular" data-btn="5" type="button" class="tabs__btn ">инструменты</button>
+          <button data-section="popular" data-btn="6" type="button" class="tabs__btn ">аксессуары</button>
+        </div>
+    
+        <!-- возможно, для всего контента нужно будет сделать дополнительную обёртку. Логически изолировать таким образом контент от табов -->
+        <div data-section="popular" data-content='1' class="tabs__contents-box"> <!-- search__content-box -->
+          <div class="popular-section__slider swiper">
+            <div class="swiper-container swiper-container">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide card">
+                  <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
+                </a>
+                <a href="#" class="swiper-slide card">
+                  <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
+                </a>
+                <a href="#" class="swiper-slide card">
+                  <img src="cscc/slider-section/slider/content-img/slider-item.jpg" alt="slide">
+                </a>
+        
+              </div>
+              <button class="swiper-button-next"></button>
+              <button class="swiper-button-prev"></button>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+    
+        <div data-section="popular" data-content='2' class="tabs__contents-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите марку" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+    
+        <div data-section="popular" data-content='3' class="tabs__contents-box">
+          <form class="search__form">
+            <input type="text" placeholder="Введите название товара" class="search__input">
+            <button type="submit" class="search__btn">искать</button>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+
+  </section>
 
 
-
-
-  <script src="./cscc/slider-section/slider/js/swiper.min.js"></script><!-- библиотека -->
-  <script src="./cscc/slider-section/slider/js/slider.js"></script><!-- инициализация свайпера -->
-
+ 
+  <script src="./cscc/common-parts/sliderjs/js/swiper.min.js"></script><!-- сама библиотека свайпера -->
+  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script><!-- инициализация всех свайперов доступных на странице -->
   <script src="cscc/search-section/script.js"></script><!-- контент в табах -->
 </body>
 

@@ -1,3 +1,5 @@
+/*  самые базовые настройки слайдера */
+
 .swiper-container {
   max-width: 100%;
   
@@ -34,12 +36,12 @@
 }
 
 .swiper-button-prev {
-  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-left.svg");
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left.svg");
   margin-left: 10px;
 }
 
 .swiper-button-next {
-  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-right.svg");
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right.svg");
   margin-right: 10px;
 }
 
@@ -54,9 +56,11 @@
 .slider-buttons {
   display: flex;
   align-items: center;
+  
 }
 
 .swiper-pagination {
+  
   margin-bottom: 40px;
   &-bullet {
     width: 68px;

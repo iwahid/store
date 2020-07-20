@@ -1,0 +1,26 @@
+.popular-section {
+  margin-bottom: 70px;
+  
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__slider {
+    width: 100%;
+  }
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+
+.swiper-button-prev {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left.svg");
+  margin-left: -15px;
+}
+
+.swiper-button-next {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right.svg");
+  margin-right: -15px;
+}

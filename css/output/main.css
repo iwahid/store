@@ -462,12 +462,13 @@ body {
   font-size: 20px;
   line-height: 24px;
   margin: 0;
+  /*   background-color: black; */
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .hidden {
@@ -749,157 +750,7 @@ a:hover {
   background-color: #1C62CD;
 }
 
-/* slider-section */
-.slider-section {
-  margin-bottom: 70px;
-}
-
-.slider-section__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.slider-section__slider {
-  max-width: 870px;
-}
-
-.promo-deal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 265px;
-  /* height: 397px; */
-  border: 1px solid #C4C4C4;
-  border-radius: 4px;
-}
-
-.promo-deal__header {
-  display: flex;
-  justify-content: space-between;
-  min-height: 60px;
-}
-
-.promo-deal__action {
-  width: fit-content;
-  max-width: 110px;
-  height: fit-content;
-  padding: 0 20px;
-  background-color: #1C62CD;
-  color: white;
-  border-top-left-radius: 3px;
-  font-family: "SFProDisplay-Medium";
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.promo-deal__prices {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  margin: 5px;
-}
-
-.promo-deal__price-new {
-  position: relative;
-  margin-bottom: 10px;
-  padding-right: 20px;
-  font-family: "Barlow-Bold";
-  font-size: 27px;
-  line-height: 32px;
-  color: #1C62CD;
-}
-
-.promo-deal__price-new::after {
-  position: absolute;
-  content: "";
-  top: 8px;
-  right: 0;
-  height: 18px;
-  width: 15px;
-  background-image: url("/store/cscc/slider-section/promo/rouble-icon-new.svg");
-}
-
-.promo-deal__price-old {
-  position: relative;
-  padding-right: 20px;
-  font-family: "Barlow-Regular";
-  font-size: 14px;
-  line-height: 17px;
-  color: #C4C4C4;
-}
-
-.promo-deal__price-old::before {
-  position: absolute;
-  content: "";
-  top: 8px;
-  right: 15px;
-  height: 2px;
-  width: 90%;
-  background-color: #C4C4C4;
-  transform: rotate(-10deg);
-  z-index: 100;
-}
-
-.promo-deal__price-old::after {
-  position: absolute;
-  content: "";
-  top: 4px;
-  right: 2px;
-  height: 10px;
-  width: 8px;
-  background-image: url("/store/cscc/slider-section/promo/rouble-icon-old.svg");
-}
-
-.promo-deal__body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px 10px 10px;
-}
-
-.promo-deal__img {
-  object-fit: contain;
-}
-
-.promo-deal__name {
-  text-align: center;
-  font-family: "SFProDisplay-Bold";
-  font-size: 18px;
-  line-height: 21px;
-}
-
-.promo-deal__footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 100px;
-  background-color: #F0F0F4;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-
-.promo-deal__title {
-  text-align: center;
-  margin-bottom: 10px;
-  font-family: "SFProDisplay-Medium";
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-}
-
-.promo-deal__time {
-  text-align: center;
-  font-family: "SFProDisplay-Bold";
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #1C62CD;
-}
-
-/* slider */
+/* подключил общий свайпер с дефолтными стилями */
 /**
  * Swiper 5.4.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -1524,6 +1375,7 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+/*  самые базовые настройки слайдера */
 .swiper-container {
   max-width: 100%;
 }
@@ -1559,12 +1411,12 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-prev {
-  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-left.svg");
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left.svg");
   margin-left: 10px;
 }
 
 .swiper-button-next {
-  background-image: url("./../../../../../store/cscc/slider-section/slider/img/arrow-right.svg");
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right.svg");
   margin-right: 10px;
 }
 
@@ -1637,6 +1489,187 @@ button.swiper-pagination-bullet {
   }
 }
 
+/* slider-section */
+/* Кастомизация свайперов - через описание в фалах _slider.scss в соответствующих блоку папках */
+/* баннер */
+.promo-deal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 265px;
+  /* height: 397px; */
+  border: 1px solid #C4C4C4;
+  border-radius: 4px;
+}
+
+.promo-deal__header {
+  display: flex;
+  justify-content: space-between;
+  min-height: 60px;
+}
+
+.promo-deal__action {
+  width: fit-content;
+  max-width: 110px;
+  height: fit-content;
+  padding: 0 20px;
+  background-color: #1C62CD;
+  color: white;
+  border-top-left-radius: 3px;
+  font-family: "SFProDisplay-Medium";
+  text-align: center;
+  line-height: 30px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.promo-deal__prices {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5px;
+}
+
+.promo-deal__price-new {
+  position: relative;
+  margin-bottom: 10px;
+  padding-right: 20px;
+  font-family: "Barlow-Bold";
+  font-size: 27px;
+  line-height: 32px;
+  color: #1C62CD;
+}
+
+.promo-deal__price-new::after {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 0;
+  height: 18px;
+  width: 15px;
+  background-image: url("/store/cscc/slider-section/promo/rouble-icon-new.svg");
+}
+
+.promo-deal__price-old {
+  position: relative;
+  padding-right: 20px;
+  font-family: "Barlow-Regular";
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+
+.promo-deal__price-old::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  right: 15px;
+  height: 2px;
+  width: 90%;
+  background-color: #C4C4C4;
+  transform: rotate(-10deg);
+  z-index: 100;
+}
+
+.promo-deal__price-old::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  right: 2px;
+  height: 10px;
+  width: 8px;
+  background-image: url("/store/cscc/slider-section/promo/rouble-icon-old.svg");
+}
+
+.promo-deal__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px 10px 10px;
+}
+
+.promo-deal__img {
+  object-fit: contain;
+}
+
+.promo-deal__name {
+  text-align: center;
+  font-family: "SFProDisplay-Bold";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.promo-deal__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100px;
+  background-color: #F0F0F4;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.promo-deal__title {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "SFProDisplay-Medium";
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.promo-deal__time {
+  text-align: center;
+  font-family: "SFProDisplay-Bold";
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #1C62CD;
+}
+
+/* кастом стиль для первого слайдера */
+.slider-section {
+  margin-bottom: 70px;
+}
+
+.slider-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-section__slider {
+  max-width: 870px;
+}
+
+/* кастом стиль для второго слайдера */
+.popular-section {
+  margin-bottom: 70px;
+}
+
+.popular-section__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popular-section__slider {
+  width: 100%;
+}
+
+.swiper-pagination {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left.svg");
+  margin-left: -15px;
+}
+
+.swiper-button-next {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right.svg");
+  margin-right: -15px;
+}
+
 /* search */
 /* плавное появление элементов */
 /* @keyframes fadeEffect {
@@ -1693,6 +1726,7 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
+/* tabs */
 /* это отдельный блок, и его стоило бы распологать отдельно, но он не является полностью самодостаточным, поскольку нигде больше не используется самостоятельно */
 .tabs {
   /* не стилизация самого контента, а его обёртка. Разделяю контейнер блока под контент (это) и сам контент (поиск/предложения/реклама) других блоков*/

@@ -1,0 +1,56 @@
+/* это отдельный блок, и его стоило бы распологать отдельно, но он не является полностью самодостаточным, поскольку нигде больше не используется самостоятельно */
+.tabs {
+
+  &__btn-box{
+    height: 50px;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    padding: 10px 25px;
+    text-align: center;
+    line-height: 25px; 
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+   
+    &:hover {
+      color: black;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 0;
+      bottom: 0;
+      background-color: $color-accent;
+      right: 0;
+      left: auto;
+      transition: all .3s;
+    }
+
+    &:hover::before {
+      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: auto;
+    }
+  }
+
+  &__btn--active {
+    background-color: $color-base;
+    color: black;
+    /* font-family: "SFProDisplay-Bold"; */
+    border-radius: 5px;
+  }
+
+  /* не стилизация самого контента, а его обёртка. Разделяю контейнер блока под контент (это) и сам контент (поиск/предложения/реклама) других блоков*/
+  &__contents-box {
+    display: block;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+  }
+}
