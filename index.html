@@ -249,6 +249,7 @@
       <div class="popular__inner tabs">
         <div class="popular__tabs tabs__btn-box">
           <!-- tabs-section__btn-box -->
+          <!-- каждый таб имеет атрибут с именем группы, к которой он принадлежит. Этими группами разграничиваются свайперы на странице -->
           <button data-section="popular" data-btn="1" type="button" class="tabs__btn ">запчасти</button>
           <button data-section="popular" data-btn="2" type="button" class="tabs__btn ">моторы</button>
           <button data-section="popular" data-btn="3" type="button" class="tabs__btn ">шины</button>
@@ -258,6 +259,8 @@
         </div>
 
         <!-- возможно, для всего контента нужно будет сделать дополнительную обёртку. Логически изолировать таким образом контент от табов -->
+        
+        <!-- каждый контейнер под контент имеет атрибут с именем группы, к которой он принадлежит, и через который он связан с табом. Этими группами разграничиваются свайперы на странице -->
         <div data-section="popular" data-content='1' class="tabs__contents-box">
           <!-- search__content-box -->
           <div class="popular-section__slider">
