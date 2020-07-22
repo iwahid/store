@@ -240,7 +240,7 @@
 Инициализация экземпляров слайдера - в одном файле
 Стилизация карточек с контентом реализована через классы-модификаторы -->
 
-<!-- внутри карточек не прописываю обработку событий (нажатие кнопок и фиксацию их нового состояния). Это легко, но на мой взгляд, на текущем этапе - это лишняя работа. Вёрстка всё равно будет переносится на реакт. -->
+  <!-- внутри карточек не прописываю обработку событий (нажатие кнопок и фиксацию их нового состояния). Это легко, но на мой взгляд, на текущем этапе - это лишняя работа. Вёрстка всё равно будет переносится на реакт. -->
   <section class="popular">
     <div class="container">
 
@@ -718,7 +718,7 @@
           </div>
         </div>
       </div>
-      
+
 
     </div>
 
@@ -731,8 +731,8 @@
       </a>
     </div>
   </section>
-  
-  <!-- вторая секция, очень похожая на popular, и по сути своей являющаяся тем же самым. Для ускорения разработки решил не менять классы. -->
+
+  <!-- вторая секция, очень похожая на popular, и по сути своей являющаяся тем же самым. Отличается только контентом. Для ускорения разработки решил не менять классы. -->
   <section class="popular">
     <div class="container">
 
@@ -903,7 +903,7 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
         <div data-section="popular-2" data-content='2' class="tabs__contents-box">
           <div class="popular-section__slider">
@@ -1059,7 +1059,7 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
         <div data-section="popular-2" data-content='3' class="tabs__contents-box">
           <div class="popular-section__slider">
@@ -1093,7 +1093,7 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
         <div data-section="popular-2" data-content='4' class="tabs__contents-box">
           <div class="popular-section__slider">
@@ -1127,7 +1127,7 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
         <div data-section="popular-2" data-content='5' class="tabs__contents-box">
           <div class="popular-section__slider">
@@ -1161,7 +1161,7 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
         <div data-section="popular-2" data-content='6' class="tabs__contents-box">
           <div class="popular-section__slider">
@@ -1195,18 +1195,93 @@
             <!-- <button class="swiper-button-next swiper-button-next1"></button>
             <button class="swiper-button-prev swiper-button-prev1"></button> -->
           </div>
-           
+
         </div>
       </div>
-      
+
 
     </div>
 
   </section>
 
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__subscribe-form">
+          <h4 class="footer__form-title">Подпишитесь на нашу рассылку
+            и узнавайте о акция быстрее</h4>
+          <form action="" class="footer__form">
+            <input type="text" placeholder="Введите ваш e-mail" class="footer__form-input">
+            <button class="footer__form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+
+        <div class="footer__information-list list-info">
+          <div class="list-info__section">
+            <h6 class="list-info__title">Информация</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">О компании</a></li>
+              <li class="list-info__list-item"><a href="#">Контакты</a></li>
+              <li class="list-info__list-item"><a href="#">Акции</a></li>
+              <li class="list-info__list-item"><a href="#">Магазины</a></li>
+            </ul>
+          </div>
+          <div class="list-info__section">
+            <h6 class="list-info__title">Интернет-магазин</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">Доставка и самовывоз</a></li>
+              <li class="list-info__list-item"><a href="#">Оплата</a></li>
+              <li class="list-info__list-item"><a href="#">Возврат-обмен</a></li>
+              <li class="list-info__list-item"><a href="#">Новости</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__social-links">
+          <ul class="footer__social-buttons-list social-links">
+            <li class="social-links__item social-links__item_facebook">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_twitter">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_instagram">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_youtube">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__bottom-link">Договор оферты</a>
+        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
+
   <script src="./cscc/common-parts/sliderjs/js/swiper.min.js"></script><!-- сама библиотека свайпера -->
-  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script>
-  <!-- инициализация всех свайперов доступных на странице -->
+  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script><!-- инициализация всех свайперов доступных на странице -->
   <script src="cscc/search-section/script.js"></script><!-- контент в табах -->
 </body>
 
