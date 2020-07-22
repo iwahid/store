@@ -565,6 +565,10 @@ a:hover {
   color: red;
 }
 
+.hide-title {
+  display: none;
+}
+
 /* общие блоки */
 .user-list {
   display: flex;
