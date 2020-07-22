@@ -4,10 +4,14 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
   }
   &__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 300px;
     margin-right: 15px;
   }
@@ -17,7 +21,7 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
   &__form {
     display: flex;
@@ -57,24 +61,11 @@
     border: none;
     padding: 10px 16px;
     cursor: pointer;
-    /* 
-    & svg {
-      height: inherit;
-      width: inherit;
-      transition: all .3s;
-    }
-
-    &--active svg{
-      fill: $color-accent;
-    }
-
-    &:hover {
-      fill: $color-accent;
-    } */
   }
   &__information-list {
   }
   &__social-links {
+    height: 100%;
     width: 300px;
   }
   &__bottom {

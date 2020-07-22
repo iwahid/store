@@ -1566,7 +1566,7 @@ button.swiper-pagination-bullet {
   content: "";
   top: 8px;
   right: 15px;
-  height: 2px;
+  height: 1px;
   width: 90%;
   background-color: #C4C4C4;
   transform: rotate(-10deg);
@@ -1939,6 +1939,7 @@ button.swiper-pagination-bullet {
   border: none;
   padding: 0;
   cursor: pointer;
+  transition: 0.3s box-shadow ease-in;
 }
 
 .product-card__wish-list svg {
@@ -1947,11 +1948,13 @@ button.swiper-pagination-bullet {
   transition: all .3s;
 }
 
-.product-card__wish-list--active svg {
+.product-card__wish-list:hover svg {
   fill: #1C62CD;
+  filter: drop-shadow(0px 0px 5px #1C62CD);
 }
 
-.product-card__wish-list:hover {
+.product-card__wish-list--active svg {
+  transition: 0.3s all ease-in;
   fill: #1C62CD;
 }
 
@@ -1988,6 +1991,8 @@ button.swiper-pagination-bullet {
 }
 
 .product-card__price {
+  position: absolute;
+  bottom: 0;
   font-family: "Barlow-Bold";
   font-style: normal;
   font-weight: bold;
@@ -1998,7 +2003,14 @@ button.swiper-pagination-bullet {
   transition: 0.3s color;
 }
 
+.product-card__price::after {
+  content: "₽";
+  font-style: inherit;
+  margin-left: 0.4em;
+}
+
 .product-card__cart {
+  /* в дизайне не обозначено состояние кнопки, когда товар уже был ранее добавлен в корзиную По этому при активном элементе перекрашиваю вложенную svg в чёрный*/
   position: absolute;
   content: "";
   height: 40px;
@@ -2124,11 +2136,15 @@ button.swiper-pagination-bullet {
 .footer__top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .footer__subscribe-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   margin-right: 15px;
 }
@@ -2139,7 +2155,7 @@ button.swiper-pagination-bullet {
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .footer__form {
@@ -2179,23 +2195,10 @@ button.swiper-pagination-bullet {
   border: none;
   padding: 10px 16px;
   cursor: pointer;
-  /* 
-    & svg {
-      height: inherit;
-      width: inherit;
-      transition: all .3s;
-    }
-
-    &--active svg{
-      fill: $color-accent;
-    }
-
-    &:hover {
-      fill: $color-accent;
-    } */
 }
 
 .footer__social-links {
+  height: 100%;
   width: 300px;
 }
 
