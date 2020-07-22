@@ -2109,3 +2109,8 @@ button.swiper-pagination-bullet {
 .product-card--not-available .product-card__cart {
   display: none;
 }
+
+/* banner */
+.banner {
+  margin-bottom: 70px;
+}

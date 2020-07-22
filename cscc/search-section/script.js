@@ -13,6 +13,7 @@ arrTabsContents.forEach(element => {
 /* два массива отсортированных для секции search */
 /* TODO: переписать скрипт так, что бы в цикле автоматом вытаскивал все первые вхождения новых блоков
    TODO: возможно, даже не стоит перебирать массивы, а понерфить через метод всех соседей первых объектов в каждой секции */
+   /* ==================== секция поиска*/ 
 let searchTabsButtons = arrTabsButtons.filter(item => {/* 
   console.log("Получен аттрибут у кнопки: ", item.getAttribute("data-section")) */
   return item.getAttribute("data-section") == "search"
@@ -23,7 +24,7 @@ let searchTabsContents = arrTabsContents.filter(item => {
 searchTabsButtons[0].classList.add("tabs__btn--active")
 searchTabsContents[0].style.display = 'block'
 
-/* ==================== */
+/* ==================== секция: Популярные товары*/
 let popularTabsButtons = arrTabsButtons.filter(item => {/* 
   console.log("Получен аттрибут у кнопки: ", item.getAttribute("data-section")) */
   return item.getAttribute("data-section") == "popular"
@@ -33,6 +34,17 @@ let popularTabsContents = arrTabsContents.filter(item => {
 })
 popularTabsButtons[0].classList.add("tabs__btn--active")
 popularTabsContents[0].style.display = 'block'
+
+/* ==================== секция: С этим товаром покупают */
+let popular2TabsButtons = arrTabsButtons.filter(item => {/* 
+  console.log("Получен аттрибут у кнопки: ", item.getAttribute("data-section")) */
+  return item.getAttribute("data-section") == "popular-2"
+})
+let popular2TabsContents = arrTabsContents.filter(item => {
+  return item.getAttribute("data-section") == "popular-2"
+})
+popular2TabsButtons[0].classList.add("tabs__btn--active")
+popular2TabsContents[0].style.display = 'block'
 
 /* *********** */
 /* два массива отсортированных для секции search */
