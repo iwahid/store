@@ -10,17 +10,17 @@
   }
 }
 
-.swiper-pagination {
+.popular .swiper-pagination {
   display: none;
 }
 
 
-.swiper-button-prev {
-  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left.svg");
+.popular .swiper-button-prev {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right-black.svg");
   margin-left: -15px;
 }
 
-.swiper-button-next {
-  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-right.svg");
+.popular .swiper-button-next {
+  background-image: url("./../../../../../store/cscc/common-parts/sliderjs/img/arrow-left-black.svg");  
   margin-right: -15px;
 }
