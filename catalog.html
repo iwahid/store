@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/output/main.css">
+  <!-- 
+  <link rel="stylesheet" href="fonts/ght/ght.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<!-- добавил скрытые заголовки на страницу через class="hide-title", для улучшения seo -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__menu">
+            <nav class="header-menu">
+              <ul class="header-menu__list">
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Магазины</a>
+                </p>
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Акции</a>
+                </p>
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Доставка и оплата</a>
+                </p>
+              </ul>
+            </nav>
+          </div>
+
+
+          <!-- logo -->
+          <a href="#" class="logo header__logo">
+            <img class="logo__img" src="cscc/common-parts/logo/лого.svg" alt="logo">
+          </a>
+
+          <div class="header__right-section">
+            <p class="header__adress">Москва, ул. Науки 25</p>
+
+            <!-- внутри могут быть как ссылки, так и кнопки -->
+            <!-- дополнительный класс cart-icon у иконок в юзер-листе для нотификаций -->
+            <ul class="header__user-list user-list">
+              <li class="user-list__item"><a href="#" class="user-list__link">
+                  <img src="cscc/common-parts/user-list/img/wish-list.svg" alt="" class="user-list__img">
+                </a></li>
+              <li class="user-list__item"><a href="#" class="user-list__link">
+                  <img src="cscc/common-parts/user-list/img/man.svg" alt="" class="user-list__img">
+                </a></li>
+              <li class="user-list__item"><a href="#" class="user-list__link cart-icon">
+                  <img src="cscc/common-parts/user-list/img/cart.svg" alt="" class="user-list__img">
+                  <p class="cart-icon__count">1</p>
+                </a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <ul class="header-categories">
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Квадроциклы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Катера</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Гидроциклы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Лодки</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Вездеходы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Снегоходы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Двигатели</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Запчасти</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- последняя ссылка внутри li может быть без проблем заменена на span -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__list-item">
+          <a href="#">Главная</a>
+        </li>
+        <li class="breadcrumbs__list-item">
+          <a href="#">Гидроциклы</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__subscribe-form">
+          <h4 class="footer__form-title">Подпишитесь на нашу рассылку
+            и узнавайте о акция быстрее</h4>
+          <form action="" class="footer__form">
+            <input type="email" placeholder="Введите ваш e-mail" class="footer__form-input">
+            <button class="footer__form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+
+        <div class="footer__information-list list-info">
+          <h3 class="hide-title">Полезная информация</h3>
+          <div class="list-info__section">
+            <h6 class="list-info__title">Информация</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">О компании</a></li>
+              <li class="list-info__list-item"><a href="#">Контакты</a></li>
+              <li class="list-info__list-item"><a href="#">Акции</a></li>
+              <li class="list-info__list-item"><a href="#">Магазины</a></li>
+            </ul>
+          </div>
+          <div class="list-info__section">
+            <h6 class="list-info__title">Интернет-магазин</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">Доставка и самовывоз</a></li>
+              <li class="list-info__list-item"><a href="#">Оплата</a></li>
+              <li class="list-info__list-item"><a href="#">Возврат-обмен</a></li>
+              <li class="list-info__list-item"><a href="#">Новости</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__social-links">
+          <h3 class="hide-title">Наши социальные сети</h3>
+          <ul class="footer__social-buttons-list social-links">
+            <li class="social-links__item social-links__item_facebook">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_twitter">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_instagram">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_youtube">
+              <a href="#">
+                <svg>
+                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__bottom-link">Договор оферты</a>
+        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./cscc/common-parts/sliderjs/js/swiper.min.js"></script><!-- сама библиотека свайпера -->
+  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script><!-- инициализация всех свайперов доступных на странице -->
+  <script src="cscc/search-section/script.js"></script><!-- контент в табах -->
+</body>
+
+</html>

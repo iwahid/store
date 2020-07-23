@@ -2282,3 +2282,37 @@ button.swiper-pagination-bullet {
   filter: drop-shadow(0px 0px 5px #1C62CD);
   fill: #1C62CD;
 }
+
+/* ============================================ */
+/* catalog - page */
+/* breadcrumbs */
+.breadcrumbs {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs__list-item {
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  padding-right: 16px;
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #C4C4C4;
+}
+
+.breadcrumbs__list-item::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background-image: url("./../../../../store/cscc/common-parts/breadcrumbs/icon/Back.png");
+  height: 10px;
+  width: 6px;
+  bottom: 4px;
+}
+
+.breadcrumbs__list-item:last-child::after {
+  display: none;
+}
