@@ -1,0 +1,38 @@
+.catalog {
+  margin-bottom: 100px;
+  
+  &__breadcrumbs {
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-family: "SFProDisplay-Bold";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+
+    margin-bottom: 25px;
+  }
+
+  &__top-filter {
+    margin-bottom: 45px;
+  }
+
+  &__inner {
+    display: flex;
+  }
+  &__aside {
+    min-width: 290px;
+    background-color: green;
+  }
+
+  &__product-list {
+    padding-left: 300px;
+    margin-left: -290px;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

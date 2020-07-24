@@ -1912,9 +1912,10 @@ button.swiper-pagination-bullet {
 
 /* кароточка товара */
 .product-card {
+  /* FIXME: надо либо перевести на гриды, либо дальше костылять. Убрать отсутпы здесь, и добавлять потомкам контейнеров уже на местах, через вложенность scss*/
   position: relative;
   height: 405px;
-  width: 260px;
+  width: 270px;
   margin: 10px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
@@ -1949,7 +1950,7 @@ button.swiper-pagination-bullet {
 .product-card__wish-list svg {
   height: inherit;
   width: inherit;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .product-card__wish-list:hover svg {
@@ -1977,9 +1978,12 @@ button.swiper-pagination-bullet {
 }
 
 .product-card__img {
-  width: auto;
   margin-top: 35px;
   margin-bottom: 10px;
+}
+
+.product-card__img img {
+  max-width: 100%;
 }
 
 .product-card__title {
@@ -2030,7 +2034,7 @@ button.swiper-pagination-bullet {
 .product-card__cart svg {
   height: 23px;
   width: 30px;
-  transition: all .9s;
+  transition: all 0.9s;
 }
 
 .product-card__cart--active svg {
@@ -2285,11 +2289,47 @@ button.swiper-pagination-bullet {
 
 /* ============================================ */
 /* catalog - page */
-/* breadcrumbs */
-.breadcrumbs {
+/* catalog-page */
+.catalog {
+  margin-bottom: 100px;
+}
+
+.catalog__breadcrumbs {
   margin-bottom: 40px;
 }
 
+.catalog__title {
+  font-family: "SFProDisplay-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 25px;
+}
+
+.catalog__top-filter {
+  margin-bottom: 45px;
+}
+
+.catalog__inner {
+  display: flex;
+}
+
+.catalog__aside {
+  min-width: 290px;
+  background-color: green;
+}
+
+.catalog__product-list {
+  padding-left: 300px;
+  margin-left: -290px;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* breadcrumbs */
 .breadcrumbs__list-item {
   display: inline-block;
   position: relative;
@@ -2315,4 +2355,72 @@ button.swiper-pagination-bullet {
 
 .breadcrumbs__list-item:last-child::after {
   display: none;
+}
+
+/* top-filter */
+.top-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+
+.top-filter__tags li {
+  display: inline-block;
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+  padding: 5px 20px;
+  background-color: #F0F0F4;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.top-filter__view-customize {
+  display: flex;
+}
+
+.top-filter__flow-change {
+  display: flex;
+  margin-left: 50px;
+}
+
+.top-filter__button {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: 0.3s box-shadow ease-in;
+  /* fill: $text-color-base; */
+  outline: none;
+}
+
+.top-filter__button svg {
+  height: inherit;
+  width: inherit;
+  transition: opacity 0.3s;
+  opacity: 0.3;
+}
+
+.top-filter__button:hover svg {
+  /* fill: $color-accent; */
+  /* 
+      filter: drop-shadow(0px 0px 5px $color-accent); */
+  opacity: 1;
+}
+
+.top-filter__button--active svg {
+  transition: 0.3s opacity ease-in;
+  opacity: 1;
+}
+
+.top-filter__button + .top-filter__button {
+  margin-left: 10px;
 }

@@ -1,0 +1,76 @@
+.top-filter {
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+
+  &__tags li {
+    display: inline-block;
+    font-family: "SFProDisplay-Regular";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: $text-color-base;
+    padding: 5px 20px;
+    background-color: $color-base;
+    border-radius: 3px;
+
+    margin-right: 10px;
+  }
+  &__view-customize {
+    display: flex;
+  }
+  &__select {
+  }
+  &__flow-change {
+    
+    display: flex;
+    margin-left: 50px;
+  }
+  &__button {
+    height: 24px;
+    width: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s box-shadow ease-in;
+    /* fill: $text-color-base; */
+    outline: none;
+    
+    & svg {
+      height: inherit;
+      width: inherit;
+      transition: opacity 0.3s;
+      opacity: 0.3;
+    }
+  
+    &:hover svg {
+      /* fill: $color-accent; *//* 
+      filter: drop-shadow(0px 0px 5px $color-accent); */
+      opacity: 1;
+      
+    }
+  
+    &--active svg {
+      transition: 0.3s opacity ease-in;
+      opacity: 1;
+    }
+
+    &--grid {
+    }
+    &--column {
+    }
+  
+  }
+  
+  &__button + &__button {
+    margin-left: 10px;
+  }
+
+  
+}

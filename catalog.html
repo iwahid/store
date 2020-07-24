@@ -15,7 +15,7 @@
 </head>
 
 <body>
-<!-- добавил скрытые заголовки на страницу через class="hide-title", для улучшения seo -->
+  <!-- добавил скрытые заголовки на страницу через class="hide-title", для улучшения seo -->
   <header class="header">
     <div class="header__top">
       <div class="container">
@@ -85,19 +85,256 @@
   </header>
 
   <!-- последняя ссылка внутри li может быть без проблем заменена на span -->
-  <div class="breadcrumbs">
+
+
+  <div class="catalog">
     <div class="container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__list-item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <a href="#">Гидроциклы</a>
-        </li>
-      </ul>
+
+      <div class="catalog__breadcrumbs">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a href="#">Гидроциклы</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 class="catalog__title">Гидроциклы</h2>
+
+      <div class="catalog__top-filter top-filter">
+
+        <ul class="top-filter__tags">
+          <li>Полноприводные</li>
+          <li>от 5000</li>
+          <li>BRP</li>
+          <li>Spark 2</li>
+        </ul>
+
+        <div class="top-filter__view-customize">
+          <div class="top-filter__select">
+            <select name="select">
+              <option value="value1">Сначала дешевле</option>
+              <option value="value2" selected>Сначала дороже</option>
+              <option value="value3">По популярности</option>
+            </select>
+          </div>
+
+          <div class="top-filter__flow-change">
+            <button type="button" class="top-filter__button top-filter__button--grid top-filter__button--active">
+              <svg>
+                <use href="./../store/cscc/page-catalog/top-filter/icon/icons-sprite.svg#grid" />
+              </svg>
+            </button>
+            <button type="button" class="top-filter__button top-filter__button--column">
+              <svg>
+                <use href="./../store/cscc/page-catalog/top-filter/icon/icons-sprite.svg#column" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+
+      <div class="catalog__inner">
+
+        <aside class="catalog__aside">
+
+        </aside>
+
+        <!-- список карточек товаров немного отличается от макетного, а при адаптивности возникают проблемы только по тому, что возможности flex-boxa ограничены, и не дают возможности сделать полноценную раскладку. Либо этот потолок, либо идти за гридами -->
+        <div class="catalog__product-list">
+
+          <div class="product-card product-card__no-marg">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-1.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+          <div class="product-card product-card__no-marg ">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-2.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+          <div class="product-card product-card__no-marg">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-1.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+          <div class="product-card product-card__no-marg ">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-2.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+          <div class="product-card product-card__no-marg">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-1.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+          <div class="product-card product-card__no-marg ">
+            <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__cart ">
+              <svg>
+                <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+              </svg>
+            </button>
+            <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+            <a href class="product-card__inner">
+              <p class="product-card__hover-text">посмотреть товар</p>
+              <p class="product-card__not-available">нет в наличии</p>
+
+              <div class="product-card__img">
+                <img src="./images/content/hydrocycle-2.png" alt="Гидроцикл _ХХХ_">
+              </div>
+              <h4 class="product-card__title">BRP Audio-Premium System</h4>
+              <p class="product-card__price">68000</p>
+            </a>
+          </div>
+
+
+        </div>
+        <!--  <div class="catalog__specc">
+          
+        </div> -->
+
+
+      </div>
+
+
+      <!-- TODO: aside -->
+      <!-- TODO: grid-->
+
+      <!-- 
+        <div class="product-card ">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-3.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">BRP Audio-Premium System</h4>
+                      <p class="product-card__price">68000</p>
+                    </a>
+                  </div>
+       -->
     </div>
   </div>
-
 
   <footer class="footer">
     <div class="container">
@@ -148,21 +385,21 @@
             <li class="social-links__item social-links__item_twitter">
               <a href="#">
                 <svg>
-                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#vk"></use>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links__item social-links__item_instagram">
               <a href="#">
                 <svg>
-                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#facebook"></use>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social-links__item social-links__item_youtube">
               <a href="#">
                 <svg>
-                   <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#youtube"></use>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#youtube"></use>
                 </svg>
               </a>
             </li>
@@ -178,7 +415,8 @@
   </footer>
 
   <script src="./cscc/common-parts/sliderjs/js/swiper.min.js"></script><!-- сама библиотека свайпера -->
-  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script><!-- инициализация всех свайперов доступных на странице -->
+  <script src="./cscc/common-parts/sliderjs/js/slider.js"></script>
+  <!-- инициализация всех свайперов доступных на странице -->
   <script src="cscc/search-section/script.js"></script><!-- контент в табах -->
 </body>
 
