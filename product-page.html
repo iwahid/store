@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="css/output/main.css">
+  <!-- 
+  <link rel="stylesheet" href="fonts/ght/ght.css"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- добавил скрытые заголовки на страницу через class="hide-title", для улучшения seo -->
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__menu">
+            <nav class="header-menu">
+              <ul class="header-menu__list">
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Магазины</a>
+                </p>
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Акции</a>
+                </p>
+                <p class="header-menu__item">
+                  <a href="#" class="header-menu__link">Доставка и оплата</a>
+                </p>
+              </ul>
+            </nav>
+          </div>
+
+
+          <!-- logo -->
+          <a href="#" class="logo header__logo">
+            <img class="logo__img" src="cscc/common-parts/logo/лого.svg" alt="logo">
+          </a>
+
+          <div class="header__right-section">
+            <p class="header__adress">Москва, ул. Науки 25</p>
+
+            <!-- внутри могут быть как ссылки, так и кнопки -->
+            <!-- дополнительный класс cart-icon у иконок в юзер-листе для нотификаций -->
+            <ul class="header__user-list user-list">
+              <li class="user-list__item"><a href="#" class="user-list__link">
+                  <img src="cscc/common-parts/user-list/img/wish-list.svg" alt="" class="user-list__img">
+                </a></li>
+              <li class="user-list__item"><a href="#" class="user-list__link">
+                  <img src="cscc/common-parts/user-list/img/man.svg" alt="" class="user-list__img">
+                </a></li>
+              <li class="user-list__item"><a href="#" class="user-list__link cart-icon">
+                  <img src="cscc/common-parts/user-list/img/cart.svg" alt="" class="user-list__img">
+                  <p class="cart-icon__count">1</p>
+                </a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <div class="container">
+        <div class="header__bottom-inner">
+          <ul class="header-categories">
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Квадроциклы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Катера</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Гидроциклы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Лодки</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Вездеходы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Снегоходы</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Двигатели</a></li>
+            <li class="header-categories__item"><a href="#" class="header-categories__link">Запчасти</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+
+
+  <section class="product-showcase">
+    <div class="container">
+      <div class="catalog__breadcrumbs">
+        <div class="breadcrumbs">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__list-item">
+              <a href="#">Главная</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a href="#">Гидроциклы</a>
+            </li>
+            <li class="breadcrumbs__list-item">
+              <a >Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="product__showcase">
+      <div class="container">
+        <div class="showcase">
+          <div class="showcase__front showcase__front--sale">
+            <!-- модификатор здесь -->
+            <div class="showcase__product-image">
+              <img src="cscc/page-product/content-img/item-1.png"
+                alt="Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic">
+            </div>
+            <span class="showcase__old-price">1 200 475 ₽</span>
+            <p class="showcase__new-price">1 100 475 ₽</p>
+            <a href="#" class="showcase__reduce-price">Нашли дешевле? Снизим цену!</a>
+          </div>
+
+          <div class="showcase__description">
+            <h1 class="showcase__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
+            <span class="showcase__barcode">Код товара: 366666-2</span>
+            
+            <div class="showcase__product-desc-tabs">
+              <!-- здесь блок с табами -->
+
+              <div class="tabs">
+                <div class="showcase__tabs tabs__btn-box">
+                  <!-- tabs-section__btn-box -->
+                  <button data-section="showcase" data-btn="1" type="button" class="tabs__btn ">Характеристики</button>
+                  <button data-section="showcase" data-btn="2" type="button" class="tabs__btn ">Наличие в
+                    магазине</button>
+                </div>
+
+                <div data-section="showcase" data-content='1' class="tabs__contents-box">
+
+                  <div class="showcase__product-desc">
+                    <ul class="product-desc">
+                      <li class="product-desc__item">
+                        <span class="product-desc__name">Производитель</span>
+                        <span class="product-desc__value">Канада</span>
+                      </li>
+                      <li class="product-desc__item">
+                        <span class="product-desc__name">Количество мест, шт: </span>
+                        <span class="product-desc__value">3</span>
+                      </li>
+                      <li class="product-desc__item">
+                        <span class="product-desc__name">Мощность, л.с.</span>
+                        <span class="product-desc__value">155</span>
+                      </li>
+                      <li class="product-desc__item">
+                        <span class="product-desc__name">Тип двигателя</span>
+                        <span class="product-desc__value">Бензиновый</span>
+                      </li>
+                      <li class="product-desc__item">
+                        <span class="product-desc__name">Год выпуска</span>
+                        <span class="product-desc__value">2018</span>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+                <div data-section="showcase" data-content='2' class="tabs__contents-box">
+                  <p>Контент вкладки "Наличие в магазине"</p>
+                </div>
+
+              </div>
+
+            </div>
+
+            <button type="button" class="showcase__buy">купить</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- вторая секция, очень похожая на popular, и по сути своей являющаяся тем же самым. Отличается только контентом. Для ускорения разработки решил не менять классы. -->
+  <section class="popular">
+    <div class="container">
+
+      <h2 class="popular__title">C этим товаром покупают</h2>
+      <div class="popular__inner tabs">
+        <div class="popular__tabs tabs__btn-box">
+          <!-- tabs-section__btn-box -->
+          <button data-section="popular-2" data-btn="1" type="button" class="tabs__btn ">запчасти</button>
+          <button data-section="popular-2" data-btn="2" type="button" class="tabs__btn ">моторы</button>
+          <button data-section="popular-2" data-btn="3" type="button" class="tabs__btn ">шины</button>
+          <button data-section="popular-2" data-btn="4" type="button" class="tabs__btn ">электроника</button>
+          <button data-section="popular-2" data-btn="5" type="button" class="tabs__btn ">инструменты</button>
+          <button data-section="popular-2" data-btn="6" type="button" class="tabs__btn ">аксессуары</button>
+        </div>
+
+        <!-- возможно, для всего контента нужно будет сделать дополнительную обёртку. Логически изолировать таким образом контент от табов -->
+        <div data-section="popular-2" data-content='1' class="tabs__contents-box">
+          <!-- search__content-box -->
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart product-card__cart--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Рюкзак">
+                      </div>
+                      <h4 class="product-card__title">Водонепроницаемый Рюкзак</h4>
+                      <p class="product-card__price">9800</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-2.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательный жилет BRP Men 's Airflow PFD</h4>
+                      <p class="product-card__price">6900</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card ">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-3.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">BRP Audio-Premium System</h4>
+                      <p class="product-card__price">68000</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale product-card--not-available">
+                    <button id="spec" type="button" class="product-card__wish-list">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательное снаряжение</h4>
+                      <p class="product-card__price">1000</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательный жилет BRP Men 's Airflow PFD</h4>
+                      <p class="product-card__price">9800</p>
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+        <div data-section="popular-2" data-content='2' class="tabs__contents-box">
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+
+                <div class="swiper-slide card">
+
+                  <div class="product-card ">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-3.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">BRP Audio-Premium System</h4>
+                      <p class="product-card__price">68000</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale product-card--not-available">
+                    <button id="spec" type="button" class="product-card__wish-list">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательное снаряжение</h4>
+                      <p class="product-card__price">1000</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательный жилет BRP Men 's Airflow PFD</h4>
+                      <p class="product-card__price">9800</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart product-card__cart--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-1.png" alt="Рюкзак">
+                      </div>
+                      <h4 class="product-card__title">Водонепроницаемый Рюкзак</h4>
+                      <p class="product-card__price">9800</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="swiper-slide card">
+
+                  <div class="product-card product-card--sale">
+                    <button id="spec" type="button" class="product-card__wish-list product-card__wish-list--active">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#wish-list" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__cart ">
+                      <svg>
+                        <use href="./../store/cscc/common-parts/product-cart/icon/icons-sprite.svg#cart" />
+                      </svg>
+                    </button>
+                    <button type="button" class="product-card__notify">Сообщить о поступлении</button>
+
+                    <a href class="product-card__inner">
+                      <p class="product-card__hover-text">посмотреть товар</p>
+                      <p class="product-card__not-available">нет в наличии</p>
+
+                      <div class="product-card__img">
+                        <img src="cscc/popular-section/content-img/item-2.png" alt="Шмот">
+                      </div>
+                      <h4 class="product-card__title">Спасательный жилет BRP Men 's Airflow PFD</h4>
+                      <p class="product-card__price">6900</p>
+                    </a>
+                  </div>
+                </div>
+
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+        <div data-section="popular-2" data-content='3' class="tabs__contents-box">
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+        <div data-section="popular-2" data-content='4' class="tabs__contents-box">
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                  slider with electronics content
+                </div>
+                <div class="swiper-slide card">
+                  slider with electronics content
+                </div>
+                <div class="swiper-slide card">
+                  slider with electronics content
+                </div>
+                <div class="swiper-slide card">
+                  slider with electronics content
+                </div>
+                <div class="swiper-slide card">
+                  slider with electronics content
+                </div>
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+        <div data-section="popular-2" data-content='5' class="tabs__contents-box">
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                  some slider-content
+                </div>
+                <div class="swiper-slide card">
+                  some slider-content
+                </div>
+                <div class="swiper-slide card">
+                  some slider-content
+                </div>
+                <div class="swiper-slide card">
+                  some slider-content
+                </div>
+                <div class="swiper-slide card">
+                  some slider-content
+                </div>
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+        <div data-section="popular-2" data-content='6' class="tabs__contents-box">
+          <div class="popular-section__slider">
+            <div class="swiper-container swiper">
+              <!-- наименование не обязательно -->
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+                <div class="swiper-slide card">
+                  another slider-content
+                </div>
+
+              </div>
+              <!-- уникальные id - для работы свайпера
+              <button id="s-b-next-2" class="swiper-button-next"></button>
+              <button id="s-b-prev-2" class="swiper-button-prev"></button> -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- зарезервированные кнопки для слайдера -->
+            <!-- <button class="swiper-button-next swiper-button-next1"></button>
+            <button class="swiper-button-prev swiper-button-prev1"></button> -->
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer__top">
+
+        <div class="footer__subscribe-form">
+          <h4 class="footer__form-title">Подпишитесь на нашу рассылку
+            и узнавайте о акция быстрее</h4>
+          <form action="" class="footer__form">
+            <input type="email" placeholder="Введите ваш e-mail" class="footer__form-input">
+            <button class="footer__form-button" type="submit">Отправить</button>
+          </form>
+        </div>
+
+        <div class="footer__information-list list-info">
+          <h3 class="hide-title">Полезная информация</h3>
+          <div class="list-info__section">
+            <h6 class="list-info__title">Информация</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">О компании</a></li>
+              <li class="list-info__list-item"><a href="#">Контакты</a></li>
+              <li class="list-info__list-item"><a href="#">Акции</a></li>
+              <li class="list-info__list-item"><a href="#">Магазины</a></li>
+            </ul>
+          </div>
+          <div class="list-info__section">
+            <h6 class="list-info__title">Интернет-магазин</h6>
+            <ul class="list-info__list">
+              <li class="list-info__list-item"><a href="#">Доставка и самовывоз</a></li>
+              <li class="list-info__list-item"><a href="#">Оплата</a></li>
+              <li class="list-info__list-item"><a href="#">Возврат-обмен</a></li>
+              <li class="list-info__list-item"><a href="#">Новости</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__social-links">
+          <h3 class="hide-title">Наши социальные сети</h3>
+          <ul class="footer__social-buttons-list social-links">
+            <li class="social-links__item social-links__item_facebook">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_twitter">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_instagram">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item social-links__item_youtube">
+              <a href="#">
+                <svg>
+                  <use href="cscc/common-parts/social-links/icon/icons-sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__bottom-link">Договор оферты</a>
+        <a href="#" class="footer__bottom-link">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- на случай, если я когда-нибудь сюда вернусь
+  Как работают слайдеры и табы
+  каждый слайдер вложен в контентную часть табов. 
+  Каждому табу должен быть контент-контейнер, внутри которого и лежит слайдер, либо что-то иное.
+  Работа табов указана в script.js
+  Работа слайдеров указана в slider.js 
+  Инициализация каждого из слайдеров - одтельным скриптом на странице.
+
+  Рефакторниг:
+  Переписать инициализацию всех слайдеров в один файл так, что бы при старте он собирал все слайдеры и по data-атрибуту выбирал настройки инициализации
+  Так же и с табами - вытаскивать data-атрибут и на каждый уникальный атрибут включать функцию отображения первого результата
+-->
+
+  <script src="./cscc/common-parts/sliderjs/js/swiper.min.js"></script><!-- сама библиотека свайпера -->
+  <script src="cscc/page-product/script/slider.js"></script>
+  <!-- инициализация всех свайперов доступных на странице -->
+  <script src="cscc/page-product/script/script.js"></script><!-- контент в табах -->
+</body>
+
+</html>

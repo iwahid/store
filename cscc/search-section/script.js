@@ -46,6 +46,8 @@ let popular2TabsContents = arrTabsContents.filter(item => {
 popular2TabsButtons[0].classList.add("tabs__btn--active")
 popular2TabsContents[0].style.display = 'block'
 
+
+
 /* *********** */
 /* два массива отсортированных для секции search */
 /* TODO: в принципе, можно будет выпилить */

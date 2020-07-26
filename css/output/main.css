@@ -457,7 +457,7 @@ template {
 }
 
 body {
-  color: #2F3035;
+  color: #2f3035;
   font-family: "SFProDisplay-Regular", sans-serif;
   font-size: 20px;
   line-height: 24px;
@@ -469,6 +469,11 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
 }
 
 .hidden {
@@ -1993,7 +1998,7 @@ button.swiper-pagination-bullet {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #2F3035;
+  color: #2f3035;
   margin-bottom: 25px;
   transition: 0.3s color;
 }
@@ -2006,7 +2011,7 @@ button.swiper-pagination-bullet {
   font-weight: bold;
   font-size: 30px;
   line-height: 36px;
-  color: #2F3035;
+  color: #2f3035;
   margin-bottom: 30px;
   transition: 0.3s color;
 }
@@ -2049,7 +2054,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 30%;
   padding: 18px 22px;
-  color: #2F3035;
+  color: #2f3035;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2106,7 +2111,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   top: 30%;
   padding: 18px 22px;
-  color: #2F3035;
+  color: #2f3035;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.9);
@@ -2316,8 +2321,15 @@ button.swiper-pagination-bullet {
 }
 
 .catalog__aside {
+  /* FIXME: секцию не стилизовал, посколько в макете есть элементы стилизация которых, будет через плагины для реакта. И стилизовать их сейчас иными средствами - лишняя трата времени. Посколько нативным css полностью сверстать не получится, решил не делать вовсе. Просто экономлю на этом время */
+  height: auto;
   min-width: 290px;
-  background-color: green;
+  min-height: 1330px;
+  background-color: white;
+  background-image: url("/store/cscc/page-catalog/img/bg.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .catalog__products {
@@ -2358,7 +2370,7 @@ button.swiper-pagination-bullet {
   content: "";
   position: absolute;
   right: 0;
-  background-image: url("./../../../../store/cscc/common-parts/breadcrumbs/icon/Back.png");
+  background-image: url("./../../../store/cscc/common-parts/breadcrumbs/icon/Back.png");
   height: 10px;
   width: 6px;
   bottom: 4px;
@@ -2382,7 +2394,7 @@ button.swiper-pagination-bullet {
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
-  color: #2F3035;
+  color: #2f3035;
   padding: 5px 20px;
   background-color: #F0F0F4;
   border-radius: 3px;
@@ -2477,4 +2489,150 @@ button.swiper-pagination-bullet {
   content: "...";
   bottom: 4px;
   padding-left: 5px;
+}
+
+/* product-page */
+.showcase {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.showcase__front {
+  text-align: center;
+  min-width: 500px;
+  padding: 10px;
+  margin-right: 100px;
+  position: relative;
+}
+
+.showcase__front--sale::before {
+  content: "SALE";
+  padding: 15px 25px;
+  background-color: #1C62CD;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+  border-radius: 3px;
+}
+
+.showcase__product-image {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.showcase__product-image img {
+  max-width: 100%;
+}
+
+.showcase__old-price {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  position: relative;
+  font-family: "Barlow-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.showcase__old-price::before {
+  position: absolute;
+  content: "";
+  top: 20px;
+  right: 15px;
+  height: 1px;
+  width: 100%;
+  background-color: #C4C4C4;
+  transform: rotate(-10deg);
+  z-index: 100;
+}
+
+.showcase__new-price {
+  font-family: "Barlow-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 20px;
+}
+
+.showcase__reduce-price {
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C62CD;
+}
+
+.showcase__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.showcase__title {
+  font-family: "SFProDisplay-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 10px;
+}
+
+.showcase__barcode {
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.showcase__buy {
+  display: block;
+  padding: 15px 40px;
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  background-color: #1C62CD;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+.product-desc__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(47, 48, 53, 0.1);
+  font-family: "SFProDisplay-Regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-desc__name {
+  width: 55%;
+}
+
+.product-desc__value {
+  display: inline-block;
+  width: 45%;
+  text-align: start;
 }

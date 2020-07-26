@@ -22,8 +22,15 @@
     display: flex;
   }
   &__aside {
+    /* FIXME: секцию не стилизовал, посколько в макете есть элементы стилизация которых, будет через плагины для реакта. И стилизовать их сейчас иными средствами - лишняя трата времени. Посколько нативным css полностью сверстать не получится, решил не делать вовсе. Просто экономлю на этом время */
+    height: auto;
     min-width: 290px;
-    background-color: green;
+    min-height: 1330px;
+    background-color: white;
+    background-image: url("/store/cscc/page-catalog/img/bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   &__products {

@@ -18,6 +18,10 @@ body {
   padding: 0 10px; 
 }
 
+li {
+  list-style-type: none; /* Убираем маркеры */
+ }
+
 .hidden {
   display: none; // для скрывания объектов через js
 }
