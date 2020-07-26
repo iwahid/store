@@ -13,3 +13,13 @@
 ## Прочие комментарии
 Реализовано три страницы, согласно макета.
 Не реализовывал адаптивность и моибльное меню, поскольку планирую в дальнейшем реализовать ещё один похожий проект интернет-магазина на react, с более сложным макетом.
+
+>[Главная страница магазина](https://iwahid.github.io/store/)
+
+![Главная страница магазина](https://github.com/iwahid/store/raw/master/images/content/layout/Catalog.png)
+
+>[Каталог товаров](https://iwahid.github.io/store/catalog)
+![Каталог товаров](https://github.com/iwahid/store/raw/master/images/content/layout/Main.png)
+
+>[Карточка товара](https://iwahid.github.io/store/product-page)
+![Карточка товара](https://github.com/iwahid/store/raw/master/images/content/layout/Product-card.png)
