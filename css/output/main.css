@@ -1554,7 +1554,7 @@ button.swiper-pagination-bullet {
 .promo-deal__price-new::after {
   position: absolute;
   content: "";
-  top: 8px;
+  top: 8px; 
   right: 0;
   height: 18px;
   width: 15px;
